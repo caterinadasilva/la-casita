@@ -49,48 +49,49 @@
     right: 75px;
     box-shadow: none;
     position: absolute;
+    overflow: initial;
 }
-#casa .chimenea {
+#casa .techo .chimenea {
 	background: -webkit-linear-gradient(90deg, rgb(179, 179, 179), rgb(255, 255, 255));
 	background: linear-gradient(90deg, rgb(179, 179, 179), rgb(255, 255, 255));
     width: 40px;
     height: 100px;
     position: absolute;
     z-index: 1;
-    top: 250px;
-    left: 1000px;
+    top: 30px;
+    right: 50px;
     border-radius: 5%;
 }
-#casa .humo {
-    position: absolute;
-    top: 100px;
-    left: 80%;
+#casa .techo .humo {
+	position: relative;
+    top: -110px;
+    left: 350px;
     height: 150px;
     width: 300px;
     box-shadow: none;
     overflow: initial;
     z-index: 1;
 }
-#casa .humo > div {
+#casa .techo .humo > div {
     border-radius: 50%;
     position: absolute;
     box-shadow: none;
 }
-#casa .humo .parte1 {
+#casa .techo .humo .parte1 {
     background-color: rgba(78, 78, 78, 0.6);
     left: 0;
     bottom: 20px;
     height: 60px;
     width: 60px;
 }
-#casa .humo .parte2 {
+#casa .techo .humo .parte2 {
     left: 80px;
     top: 20px;
     height: 70px;
     width: 70px;
     background-color: rgba(78, 78, 78, 0.4);
 }
-#casa .humo .parte3 {
+#casa .techo .humo .parte3 {
     left: 175px;
     height: 80px;
     top: 0;
