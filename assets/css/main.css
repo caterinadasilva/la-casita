@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	    box-shadow: 3px 5px 15px rgba(0,0,0,0.5);
+}
+#fondo {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url('../img/cielo.png');
+}
+#fondo .sol {
+	background-color: #FFC20A;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+#fondo .pasto {
+	background-color: #597400;
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	background-image: url('../img/suelo.png');
+	background-blend-mode: multiply;
+    box-shadow: 0 -3px 5px rgba(0,0,0,0.3);
+}
+#casa .base {
+    width: 500px;
+    position: absolute;
+    bottom: 125px;
+    right: 150px;
+    background-image: url(../img/muro.png);
+    height: 350px;
+    background-color: whitesmoke;
+}
+#casa .techo {
+    border-bottom: 175px solid #1b1b1b;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    height: 25%;
+    width: 650px;
+    bottom: 450px;
+    right: 75px;
+    box-shadow: none;
+    position: absolute;
+}
+#casa .chimenea {
+	background: -webkit-linear-gradient(90deg, rgb(179, 179, 179), rgb(255, 255, 255));
+	background: linear-gradient(90deg, rgb(179, 179, 179), rgb(255, 255, 255));
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 1000px;
+    border-radius: 5%;
+}
+#casa .humo {
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    height: 150px;
+    width: 300px;
+    box-shadow: none;
+    overflow: initial;
+    z-index: 1;
+}
+#casa .humo > div {
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: none;
+}
+#casa .humo .parte1 {
+    background-color: rgba(78, 78, 78, 0.6);
+    left: 0;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+}
+#casa .humo .parte2 {
+    left: 80px;
+    top: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(78, 78, 78, 0.4);
+}
+#casa .humo .parte3 {
+    left: 175px;
+    height: 80px;
+    top: 0;
+    width: 80px;
+    background-color: rgba(78, 78, 78,0.3);
+}
+#casa .base .puerta {
+	top: 80px;
+    left: 80px;
+    width: 150px;
+    height: 270px;
+    position: relative;
+    background-image: url(../img/puerta.png);
+    background-color: #8e5e19;
+    background-blend-mode: color-burn;
+}
+#casa .base .puerta .corazon {
+    position: relative;
+    height: 85px;
+    width: 100px;
+    box-shadow: none;
+    top: 40px;
+    left: 25px;
+}
+#casa .base .puerta .corazon:before,
+#casa .base .puerta .corazon:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 3px;
+    width: 50px;
+    height: 80px;
+    background: #FA5B75;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#casa .base .puerta .corazon:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+#casa .base .ventana {
+    position: relative;
+    width: 150px;
+    height: 120px;
+    bottom: 175px;
+    left: 300px;
+    border: 10px solid #6d6d6d;
+    background-color: rgba(123, 202, 183, 0.3);
+}
